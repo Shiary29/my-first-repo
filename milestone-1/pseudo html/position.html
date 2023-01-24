@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        /* . for class */
+        .swimming div{
+            border: 1px dashed palevioletred;
+            width: 200px;
+            /* position: absolute; */
+        }
+        /* # for id */
+        #ring{
+            /* relative= element shore geleo or space khali theke jabe . ex: principal on vacation */
+            /* absolute : Princlipal retired, someone else takes the position */
+            /* position depends on parent. parent er position deoa na thakle ekdom overall dhore position hobe. 
+            ex: swimming ring er parent .swimming er position bole na die ring er absolute position top=0px dile ekdom screen er top e chole jabe . But swimming er position absolute dile ring top=0px dile ring swimming part er top e jabe */
+            
+            /* 40 px nambe */
+            /* top: 40px; */
+            /* 30 px left theke shore jabe */
+            /* left:0px;
+            top: 0px; */
+            /* position: absolute; */
+            /* position: sticky; */
+            /* position: fixed; */
+            /* top: 75px;  */
+            position: relative;
+            z-index: 1;
+        }
+        #boy{
+            position: relative;
+            top: 75px;
+            z-index: 2;
+            /* z index 26 dileo same uporei thakbe.just z index ring er theke beshi hote hbe */
+        }
+        #water{
+            position: relative;
+            top: -75px;
+        }
+        .dummy{
+            height: 150px;
+            width: 250px;
+            background-color: pink;
+        }
+       
+    </style>
+</head>
+<body>
+    <section>
+        <h1>This is my header</h1>
+        <h2>learning position</h2>
+        <h3>higher position</h3>
+    </section>
+    <section class="swimming">
+        <div id="boy"><img src="images/boy.svg" alt=""></div>
+        <div id="ring"><img src="images/ring.svg" alt=""></div>
+        <div id="water"><img src="images/water.svg" alt=""></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </section>
+    <section>
+        <h2>separate section</h2>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </section>
+    
+</body>
+</html>

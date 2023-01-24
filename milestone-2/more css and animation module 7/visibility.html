@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility</title>
+    <style>
+        :root{
+            /* custom variable */
+            --primary-color: pink;
+            --secondary-color: brown;
+            --single-border: 2px solid red;
+        }
+        .box{
+            /* width: 150px; */
+            width: calc(100% - 500px);
+            height: 150px;
+            border: 1px solid rgb(90, 21, 218);
+        }
+        /* #box-3{
+            color: peru;
+            display: none;
+            visibility: hidden;
+        } */
+        #heading-3{
+            border: 2px solid var(--primary-color);
+        }
+        p{
+            border-bottom: var(--single-border);
+        }
+        .box{
+            background-color: var(--primary-color);
+        }
+        .box-2{
+            background-color: var(--secondary-color);
+        }
+        
+    </style>
+</head>
+<body>
+    <!--  .box#box-$*4>h3{box-$} -->
+    <!-- <div class="box" id="box-1">
+        <h3>box-1</h3>
+    </div>
+    <div class="box" id="box-2">
+        <h3>box-2</h3>
+    </div>
+    <div class="box" id="box-3">
+        <h3>box-3</h3>
+    </div>
+    <div class="box" id="box-4">
+        <h3>box-4</h3>
+    </div> -->
+    <!-- h1.heading#heading-$*4{My strong heading -$}  -->
+    <h1 class="heading" id="heading-1">my strong heading -1</h1>
+    <h1 class="heading" id="heading-2">my strong heading -2</h1>
+    <h1 class="heading" id="heading-3">my strong heading -3</h1>
+    <h1 class="heading" id="heading-4">my strong heading -4</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, odit?
+    </p>
+    <div class="box">
+        <h3>my boxing box</h3>
+    </div>
+    <div class="box-2">
+        <h3>
+            pond gfg
+        </h3>
+    </div>
+    
+</body>
+</html>
